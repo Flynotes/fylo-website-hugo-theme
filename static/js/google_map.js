@@ -4,14 +4,14 @@ var google;
 function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-    var centerOfLondon = new google.maps.LatLng(51.490951,-0.16512);
+    var centerOfManchester = new google.maps.LatLng(53.4805715, -2.2490319);
     
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
         zoom: 13,
 
         // The latitude and longitude to center the map (always required)
-        center: centerOfLondon,
+        center: centerOfManchester,
 
         // How you would like to style the map. 
         scrollwheel: false,
@@ -28,8 +28,8 @@ function init() {
     var map = new google.maps.Map(mapElement, mapOptions);
     
     // Add all company addresses
-    var ecclestonYards = new google.maps.LatLng(53.47764, -2.249918);
-    var addressesAsLatLang = [ecclestonYards];
+    var centralWorkingManchester = new google.maps.LatLng(53.47764, -2.249918);
+    var addressesAsLatLang = [centralWorkingManchester];
 
     for (var x = 0; x < addressesAsLatLang.length; x++) {
         new google.maps.Marker({
