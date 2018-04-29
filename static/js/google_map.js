@@ -28,7 +28,7 @@ function init() {
     var map = new google.maps.Map(mapElement, mapOptions);
     
     // Add all company addresses
-    var ecclestonYards = new google.maps.LatLng(51.4935345, -0.148501);
+    var ecclestonYards = new google.maps.LatLng(53.47764, -2.249918);
     var addressesAsLatLang = [ecclestonYards];
 
     for (var x = 0; x < addressesAsLatLang.length; x++) {
